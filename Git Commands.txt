@@ -1,0 +1,21 @@
+***********************
+If you want to stage all your changed and deleted files and commit in one-line:
+git commit -am "changing and deleting files"
+
+Note that this command won't add new files as Git is about tracking changes. It relies on you to tell it which files are important enough to track. If you have some or you just want to stage the changes before you commit, you will have to add your files manually or use wildcard:
+git add -A stages All (include new files, modified and deleted)
+git add . stages new and modified, without deleted
+git add -u stages modified and deleted, without new
+
+then commit:
+git commit -m "..."
+
+***********************
+Clone specific branch
+git clone -b <branch> <remote_repo>
+
+***********************
+Use git fetch to fetch all latest created branches.
+
+
+
